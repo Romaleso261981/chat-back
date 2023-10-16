@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 
-MONGODB_CONNECTION='mongodb+srv://admin:leso261981@cluster0.zmmicqd.mongodb.net/our-chat5'
+const MONGODB_CONNECTION='mongodb+srv://admin:leso261981@cluster0.zmmicqd.mongodb.net/our-chat5'
 
 export const dbConnect = () => {
   mongoose.set('strictQuery', false);
