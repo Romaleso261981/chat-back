@@ -15,7 +15,7 @@ const GetRooms = async (req, res) => {
 const GetRoomById = async (req, res) => {
 	const { id } = req.params
 
-	if (id === "undefined" && id === "null") {
+	if (id === undefined && id === null) {
 		console.error("chat_id is not defined")
 		return
 	}
