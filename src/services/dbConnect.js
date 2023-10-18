@@ -1,9 +1,7 @@
 import mongoose from 'mongoose';
 
 
-const MONGODB_CONNECTION='mongodb+srv://admin:leso261981@cluster0.zmmicqd.mongodb.net/our-chat5'
-
 export const dbConnect = () => {
   mongoose.set('strictQuery', false);
-  mongoose.connect(MONGODB_CONNECTION, () => console.log('Connected to DB'));
+  mongoose.connect(process.env.MONGODB_CONNECTION, () => console.log('Connected to DB'));
 };
